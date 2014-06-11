@@ -12,5 +12,8 @@
 +(void)setAppTintColor:(UIColor *)tintColor{
     [UITabBar appearance].tintColor = tintColor;
     [UINavigationBar appearance].tintColor = tintColor;
+    [UITableViewCell appearance].tintColor = tintColor;
+    [UIButton appearance].tintColor = tintColor;
+    [UIRefreshControl appearance].tintColor = tintColor;
 }
 @end

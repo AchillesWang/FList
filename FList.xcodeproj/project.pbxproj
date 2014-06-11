@@ -38,6 +38,11 @@
 		C0C20D56194833C5003744B3 /* NTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D55194833C5003744B3 /* NTTableViewController.m */; };
 		C0C20D5E1948434F003744B3 /* NTAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D5D1948434F003744B3 /* NTAppStyle.m */; };
 		C0C20D6219484A74003744B3 /* GitAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C20D6119484A74003744B3 /* GitAvatar.png */; };
+		C0C20D6519484C92003744B3 /* NTExpenseListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D6419484C92003744B3 /* NTExpenseListCell.m */; };
+		C0C20D6B19484E73003744B3 /* NTView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D6A19484E73003744B3 /* NTView.m */; };
+		C0C20D6E19484EA2003744B3 /* NTImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D6D19484EA2003744B3 /* NTImageView.m */; };
+		C0C20D7119484EB8003744B3 /* NTRDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D7019484EB8003744B3 /* NTRDImageView.m */; };
+		C0C20D7419485221003744B3 /* NTPMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D7319485221003744B3 /* NTPMCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +119,16 @@
 		C0C20D5C1948434F003744B3 /* NTAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAppStyle.h; sourceTree = "<group>"; };
 		C0C20D5D1948434F003744B3 /* NTAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAppStyle.m; sourceTree = "<group>"; };
 		C0C20D6119484A74003744B3 /* GitAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GitAvatar.png; sourceTree = "<group>"; };
+		C0C20D6319484C92003744B3 /* NTExpenseListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTExpenseListCell.h; sourceTree = "<group>"; };
+		C0C20D6419484C92003744B3 /* NTExpenseListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTExpenseListCell.m; sourceTree = "<group>"; };
+		C0C20D6919484E73003744B3 /* NTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTView.h; sourceTree = "<group>"; };
+		C0C20D6A19484E73003744B3 /* NTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTView.m; sourceTree = "<group>"; };
+		C0C20D6C19484EA2003744B3 /* NTImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTImageView.h; sourceTree = "<group>"; };
+		C0C20D6D19484EA2003744B3 /* NTImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTImageView.m; sourceTree = "<group>"; };
+		C0C20D6F19484EB8003744B3 /* NTRDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTRDImageView.h; sourceTree = "<group>"; };
+		C0C20D7019484EB8003744B3 /* NTRDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTRDImageView.m; sourceTree = "<group>"; };
+		C0C20D7219485221003744B3 /* NTPMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPMCell.h; sourceTree = "<group>"; };
+		C0C20D7319485221003744B3 /* NTPMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPMCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +368,9 @@
 		C0C20D3019482BD6003744B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0C20D6819484E5E003744B3 /* NTView */,
+				C0C20D6719484E59003744B3 /* NTImageView */,
+				C0C20D6619484E33003744B3 /* NTRDImageView */,
 				C0C20D3119482BD6003744B3 /* NTTableView */,
 				C0C20D3419482BD6003744B3 /* NTTableViewCell */,
 			);
@@ -439,6 +457,8 @@
 			children = (
 				C0C20D471948318A003744B3 /* NTExpenseListController.h */,
 				C0C20D481948318A003744B3 /* NTExpenseListController.m */,
+				C0C20D6319484C92003744B3 /* NTExpenseListCell.h */,
+				C0C20D6419484C92003744B3 /* NTExpenseListCell.m */,
 			);
 			name = "清单";
 			sourceTree = "<group>";
@@ -448,6 +468,8 @@
 			children = (
 				C0C20D4D1948329E003744B3 /* NTPersonnelManagementController.h */,
 				C0C20D4E1948329E003744B3 /* NTPersonnelManagementController.m */,
+				C0C20D7219485221003744B3 /* NTPMCell.h */,
+				C0C20D7319485221003744B3 /* NTPMCell.m */,
 			);
 			name = "人员管理";
 			sourceTree = "<group>";
@@ -475,6 +497,33 @@
 				C0C20D6119484A74003744B3 /* GitAvatar.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		C0C20D6619484E33003744B3 /* NTRDImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D6F19484EB8003744B3 /* NTRDImageView.h */,
+				C0C20D7019484EB8003744B3 /* NTRDImageView.m */,
+			);
+			path = NTRDImageView;
+			sourceTree = "<group>";
+		};
+		C0C20D6719484E59003744B3 /* NTImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D6C19484EA2003744B3 /* NTImageView.h */,
+				C0C20D6D19484EA2003744B3 /* NTImageView.m */,
+			);
+			path = NTImageView;
+			sourceTree = "<group>";
+		};
+		C0C20D6819484E5E003744B3 /* NTView */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D6919484E73003744B3 /* NTView.h */,
+				C0C20D6A19484E73003744B3 /* NTView.m */,
+			);
+			path = NTView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,11 +633,16 @@
 				C0C20D52194832CC003744B3 /* NTSettingController.m in Sources */,
 				C0C20D14194828BE003744B3 /* UIViewExt.m in Sources */,
 				C0C20D3719482BD6003744B3 /* NTTableView.m in Sources */,
+				C0C20D7419485221003744B3 /* NTPMCell.m in Sources */,
+				C0C20D6519484C92003744B3 /* NTExpenseListCell.m in Sources */,
+				C0C20D6B19484E73003744B3 /* NTView.m in Sources */,
 				C0C20D3819482BD6003744B3 /* NTTableViewCell.m in Sources */,
 				C0C20D4C1948320D003744B3 /* NTExpenseSummaryController.m in Sources */,
 				C0C20D18194828BE003744B3 /* NTViewController.m in Sources */,
 				C0C20D491948318A003744B3 /* NTExpenseListController.m in Sources */,
+				C0C20D6E19484EA2003744B3 /* NTImageView.m in Sources */,
 				C0C20D4419482EBD003744B3 /* NTTabBarController.m in Sources */,
+				C0C20D7119484EB8003744B3 /* NTRDImageView.m in Sources */,
 				C0C20D17194828BE003744B3 /* NTNavigationController.m in Sources */,
 				C09BE0161947F0CE0005E65E /* NTAppDelegate.m in Sources */,
 				C09BE0121947F0CE0005E65E /* main.m in Sources */,

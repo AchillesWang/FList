@@ -7,6 +7,8 @@
 //
 
 #import "NTPersonnelManagementController.h"
+#import "NTPMCell.h"
+
 
 @interface NTPersonnelManagementController ()
 
@@ -26,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.refreshControl = [[UIRefreshControl alloc]init];
     // Do any additional setup after loading the view.
 }
 
@@ -34,7 +37,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* indentifier = @"NTPMCell";
+    NTPMCell* cell = [tableView dequeueReusableCellWithIdentifier:indentifier
+                                                     forIndexPath:indexPath];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 
