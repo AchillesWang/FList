@@ -1,0 +1,27 @@
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "05E-5n-sis"; */
+"05E-5n-sis.title" = "摘要";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "2WA-dL-scI"; */
+"2WA-dL-scI.title" = "人员";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "ElM-4L-qZ8"; */
+"ElM-4L-qZ8.title" = "设置";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "GRy-N1-F0G"; */
+"GRy-N1-F0G.title" = "清单";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "HFF-xX-2XE"; */
+"HFF-xX-2XE.title" = "设置";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "SHu-wt-2us"; */
+"SHu-wt-2us.title" = "清单";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "ixJ-5r-hcC"; */
+"ixJ-5r-hcC.title" = "人员管理";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "ptr-7x-iBb"; */
+"ptr-7x-iBb.title" = "摘要";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "t2G-uY-OrH"; */
+"t2G-uY-OrH.title" = "Item";

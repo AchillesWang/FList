@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C09BE0061947F0CE0005E65E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0051947F0CE0005E65E /* Foundation.framework */; };
+		C09BE0081947F0CE0005E65E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0071947F0CE0005E65E /* CoreGraphics.framework */; };
+		C09BE00A1947F0CE0005E65E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0091947F0CE0005E65E /* UIKit.framework */; };
+		C09BE0101947F0CE0005E65E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C09BE00E1947F0CE0005E65E /* InfoPlist.strings */; };
+		C09BE0121947F0CE0005E65E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09BE0111947F0CE0005E65E /* main.m */; };
+		C09BE0161947F0CE0005E65E /* NTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C09BE0151947F0CE0005E65E /* NTAppDelegate.m */; };
+		C09BE0191947F0CE0005E65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09BE0171947F0CE0005E65E /* Main.storyboard */; };
+		C09BE0211947F0CE0005E65E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09BE0201947F0CE0005E65E /* Images.xcassets */; };
+		C09BE0281947F0CE0005E65E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0271947F0CE0005E65E /* XCTest.framework */; };
+		C09BE0291947F0CE0005E65E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0051947F0CE0005E65E /* Foundation.framework */; };
+		C09BE02A1947F0CE0005E65E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0091947F0CE0005E65E /* UIKit.framework */; };
+		C09BE0321947F0CE0005E65E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C09BE0301947F0CE0005E65E /* InfoPlist.strings */; };
+		C09BE0341947F0CE0005E65E /* FListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C09BE0331947F0CE0005E65E /* FListTests.m */; };
+		C0C20D12194828BE003744B3 /* UIDevice+Resolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20CE4194828BE003744B3 /* UIDevice+Resolutions.m */; };
+		C0C20D13194828BE003744B3 /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20CE7194828BE003744B3 /* UIView+Effects.m */; };
+		C0C20D14194828BE003744B3 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20CEA194828BE003744B3 /* UIViewExt.m */; };
+		C0C20D17194828BE003744B3 /* NTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20CF4194828BE003744B3 /* NTNavigationController.m */; };
+		C0C20D18194828BE003744B3 /* NTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20CF7194828BE003744B3 /* NTViewController.m */; };
+		C0C20D19194828BE003744B3 /* UIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20CFB194828BE003744B3 /* UIUtils.m */; };
+		C0C20D1D194828BE003744B3 /* WXXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D11194828BE003744B3 /* WXXBaseModel.m */; };
+		C0C20D3719482BD6003744B3 /* NTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D3319482BD6003744B3 /* NTTableView.m */; };
+		C0C20D3819482BD6003744B3 /* NTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D3619482BD6003744B3 /* NTTableViewCell.m */; };
+		C0C20D3D19482DC3003744B3 /* NTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D3C19482DC3003744B3 /* NTMainViewController.m */; };
+		C0C20D4419482EBD003744B3 /* NTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D4319482EBD003744B3 /* NTTabBarController.m */; };
+		C0C20D491948318A003744B3 /* NTExpenseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D481948318A003744B3 /* NTExpenseListController.m */; };
+		C0C20D4C1948320D003744B3 /* NTExpenseSummaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D4B1948320D003744B3 /* NTExpenseSummaryController.m */; };
+		C0C20D4F1948329E003744B3 /* NTPersonnelManagementController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D4E1948329E003744B3 /* NTPersonnelManagementController.m */; };
+		C0C20D52194832CC003744B3 /* NTSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D51194832CC003744B3 /* NTSettingController.m */; };
+		C0C20D56194833C5003744B3 /* NTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D55194833C5003744B3 /* NTTableViewController.m */; };
+		C0C20D5E1948434F003744B3 /* NTAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D5D1948434F003744B3 /* NTAppStyle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C09BE02B1947F0CE0005E65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C09BDFFA1947F0CE0005E65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09BE0011947F0CE0005E65E;
+			remoteInfo = FList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C09BE0021947F0CE0005E65E /* FList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09BE0051947F0CE0005E65E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C09BE0071947F0CE0005E65E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C09BE0091947F0CE0005E65E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C09BE00D1947F0CE0005E65E /* FList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FList-Info.plist"; sourceTree = "<group>"; };
+		C09BE00F1947F0CE0005E65E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C09BE0111947F0CE0005E65E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C09BE0131947F0CE0005E65E /* FList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FList-Prefix.pch"; sourceTree = "<group>"; };
+		C09BE0141947F0CE0005E65E /* NTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAppDelegate.h; sourceTree = "<group>"; };
+		C09BE0151947F0CE0005E65E /* NTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAppDelegate.m; sourceTree = "<group>"; };
+		C09BE0181947F0CE0005E65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C09BE0201947F0CE0005E65E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C09BE0261947F0CE0005E65E /* FListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09BE0271947F0CE0005E65E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C09BE02F1947F0CE0005E65E /* FListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FListTests-Info.plist"; sourceTree = "<group>"; };
+		C09BE0311947F0CE0005E65E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C09BE0331947F0CE0005E65E /* FListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FListTests.m; sourceTree = "<group>"; };
+		C0C20CE3194828BE003744B3 /* UIDevice+Resolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Resolutions.h"; sourceTree = "<group>"; };
+		C0C20CE4194828BE003744B3 /* UIDevice+Resolutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Resolutions.m"; sourceTree = "<group>"; };
+		C0C20CE6194828BE003744B3 /* UIView+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Effects.h"; sourceTree = "<group>"; };
+		C0C20CE7194828BE003744B3 /* UIView+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Effects.m"; sourceTree = "<group>"; };
+		C0C20CE9194828BE003744B3 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		C0C20CEA194828BE003744B3 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		C0C20CF3194828BE003744B3 /* NTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNavigationController.h; sourceTree = "<group>"; };
+		C0C20CF4194828BE003744B3 /* NTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNavigationController.m; sourceTree = "<group>"; };
+		C0C20CF6194828BE003744B3 /* NTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTViewController.h; sourceTree = "<group>"; };
+		C0C20CF7194828BE003744B3 /* NTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTViewController.m; sourceTree = "<group>"; };
+		C0C20CFA194828BE003744B3 /* UIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtils.h; sourceTree = "<group>"; };
+		C0C20CFB194828BE003744B3 /* UIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIUtils.m; sourceTree = "<group>"; };
+		C0C20D10194828BE003744B3 /* WXXBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXXBaseModel.h; sourceTree = "<group>"; };
+		C0C20D11194828BE003744B3 /* WXXBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXXBaseModel.m; sourceTree = "<group>"; };
+		C0C20D2919482995003744B3 /* NTAppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAppMacro.h; sourceTree = "<group>"; };
+		C0C20D2A194829F7003744B3 /* NTBaseMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTBaseMacro.h; sourceTree = "<group>"; };
+		C0C20D2B19482A3F003744B3 /* NTWebAPIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTWebAPIMacro.h; sourceTree = "<group>"; };
+		C0C20D2C19482A91003744B3 /* NTNetEaseNewsAPIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTNetEaseNewsAPIMacro.h; sourceTree = "<group>"; };
+		C0C20D2D19482AEA003744B3 /* NTNotificationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTNotificationMacro.h; sourceTree = "<group>"; };
+		C0C20D2E19482B05003744B3 /* NTUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTUtilsMacro.h; sourceTree = "<group>"; };
+		C0C20D2F19482B24003744B3 /* NTVendorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTVendorMacro.h; sourceTree = "<group>"; };
+		C0C20D3219482BD6003744B3 /* NTTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTableView.h; sourceTree = "<group>"; };
+		C0C20D3319482BD6003744B3 /* NTTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTableView.m; sourceTree = "<group>"; };
+		C0C20D3519482BD6003744B3 /* NTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTableViewCell.h; sourceTree = "<group>"; };
+		C0C20D3619482BD6003744B3 /* NTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTableViewCell.m; sourceTree = "<group>"; };
+		C0C20D3B19482DC3003744B3 /* NTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMainViewController.h; sourceTree = "<group>"; };
+		C0C20D3C19482DC3003744B3 /* NTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMainViewController.m; sourceTree = "<group>"; };
+		C0C20D3E19482E03003744B3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C0C20D3F19482E03003744B3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		C0C20D4019482E03003744B3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		C0C20D4219482EBD003744B3 /* NTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTabBarController.h; sourceTree = "<group>"; };
+		C0C20D4319482EBD003744B3 /* NTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTabBarController.m; sourceTree = "<group>"; };
+		C0C20D4619482F5C003744B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C0C20D471948318A003744B3 /* NTExpenseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTExpenseListController.h; sourceTree = "<group>"; };
+		C0C20D481948318A003744B3 /* NTExpenseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTExpenseListController.m; sourceTree = "<group>"; };
+		C0C20D4A1948320D003744B3 /* NTExpenseSummaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTExpenseSummaryController.h; sourceTree = "<group>"; };
+		C0C20D4B1948320D003744B3 /* NTExpenseSummaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTExpenseSummaryController.m; sourceTree = "<group>"; };
+		C0C20D4D1948329E003744B3 /* NTPersonnelManagementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPersonnelManagementController.h; sourceTree = "<group>"; };
+		C0C20D4E1948329E003744B3 /* NTPersonnelManagementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPersonnelManagementController.m; sourceTree = "<group>"; };
+		C0C20D50194832CC003744B3 /* NTSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSettingController.h; sourceTree = "<group>"; };
+		C0C20D51194832CC003744B3 /* NTSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSettingController.m; sourceTree = "<group>"; };
+		C0C20D54194833C5003744B3 /* NTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTTableViewController.h; sourceTree = "<group>"; };
+		C0C20D55194833C5003744B3 /* NTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTableViewController.m; sourceTree = "<group>"; };
+		C0C20D5C1948434F003744B3 /* NTAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAppStyle.h; sourceTree = "<group>"; };
+		C0C20D5D1948434F003744B3 /* NTAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAppStyle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C09BDFFF1947F0CE0005E65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09BE0081947F0CE0005E65E /* CoreGraphics.framework in Frameworks */,
+				C09BE00A1947F0CE0005E65E /* UIKit.framework in Frameworks */,
+				C09BE0061947F0CE0005E65E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09BE0231947F0CE0005E65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09BE0281947F0CE0005E65E /* XCTest.framework in Frameworks */,
+				C09BE02A1947F0CE0005E65E /* UIKit.framework in Frameworks */,
+				C09BE0291947F0CE0005E65E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C09BDFF91947F0CE0005E65E = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3919482D4F003744B3 /* Sections */,
+				C0C20CE0194828BE003744B3 /* General */,
+				C0C20D07194828BE003744B3 /* Macro */,
+				C0C20D0E194828BE003744B3 /* Models */,
+				C09BE00B1947F0CE0005E65E /* FList */,
+				C09BE02D1947F0CE0005E65E /* FListTests */,
+				C09BE0041947F0CE0005E65E /* Frameworks */,
+				C09BE0031947F0CE0005E65E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C09BE0031947F0CE0005E65E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C09BE0021947F0CE0005E65E /* FList.app */,
+				C09BE0261947F0CE0005E65E /* FListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C09BE0041947F0CE0005E65E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C09BE0051947F0CE0005E65E /* Foundation.framework */,
+				C09BE0071947F0CE0005E65E /* CoreGraphics.framework */,
+				C09BE0091947F0CE0005E65E /* UIKit.framework */,
+				C09BE0271947F0CE0005E65E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C09BE00B1947F0CE0005E65E /* FList */ = {
+			isa = PBXGroup;
+			children = (
+				C09BE0141947F0CE0005E65E /* NTAppDelegate.h */,
+				C09BE0151947F0CE0005E65E /* NTAppDelegate.m */,
+				C09BE0171947F0CE0005E65E /* Main.storyboard */,
+				C09BE0201947F0CE0005E65E /* Images.xcassets */,
+				C09BE00C1947F0CE0005E65E /* Supporting Files */,
+			);
+			path = FList;
+			sourceTree = "<group>";
+		};
+		C09BE00C1947F0CE0005E65E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C09BE00D1947F0CE0005E65E /* FList-Info.plist */,
+				C09BE00E1947F0CE0005E65E /* InfoPlist.strings */,
+				C09BE0111947F0CE0005E65E /* main.m */,
+				C09BE0131947F0CE0005E65E /* FList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C09BE02D1947F0CE0005E65E /* FListTests */ = {
+			isa = PBXGroup;
+			children = (
+				C09BE0331947F0CE0005E65E /* FListTests.m */,
+				C09BE02E1947F0CE0005E65E /* Supporting Files */,
+			);
+			path = FListTests;
+			sourceTree = "<group>";
+		};
+		C09BE02E1947F0CE0005E65E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C09BE02F1947F0CE0005E65E /* FListTests-Info.plist */,
+				C09BE0301947F0CE0005E65E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0C20CE0194828BE003744B3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CE1194828BE003744B3 /* Categories */,
+				C0C20CEB194828BE003744B3 /* Classes */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C0C20CE1194828BE003744B3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CE2194828BE003744B3 /* UIDevice+Resolutions */,
+				C0C20CE5194828BE003744B3 /* UIView+Effects */,
+				C0C20CE8194828BE003744B3 /* UIViewExt */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C0C20CE2194828BE003744B3 /* UIDevice+Resolutions */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CE3194828BE003744B3 /* UIDevice+Resolutions.h */,
+				C0C20CE4194828BE003744B3 /* UIDevice+Resolutions.m */,
+			);
+			path = "UIDevice+Resolutions";
+			sourceTree = "<group>";
+		};
+		C0C20CE5194828BE003744B3 /* UIView+Effects */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CE6194828BE003744B3 /* UIView+Effects.h */,
+				C0C20CE7194828BE003744B3 /* UIView+Effects.m */,
+			);
+			path = "UIView+Effects";
+			sourceTree = "<group>";
+		};
+		C0C20CE8194828BE003744B3 /* UIViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CE9194828BE003744B3 /* UIViewExt.h */,
+				C0C20CEA194828BE003744B3 /* UIViewExt.m */,
+			);
+			path = UIViewExt;
+			sourceTree = "<group>";
+		};
+		C0C20CEB194828BE003744B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3019482BD6003744B3 /* Views */,
+				C0C20CEC194828BE003744B3 /* Controller */,
+				C0C20CF8194828BE003744B3 /* Utils */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C0C20CEC194828BE003744B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D53194833B6003744B3 /* NTTabelViewController */,
+				C0C20D4119482E80003744B3 /* NTTabbarController */,
+				C0C20CF2194828BE003744B3 /* NTNavigationController */,
+				C0C20CF5194828BE003744B3 /* NTViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0C20CF2194828BE003744B3 /* NTNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CF3194828BE003744B3 /* NTNavigationController.h */,
+				C0C20CF4194828BE003744B3 /* NTNavigationController.m */,
+			);
+			path = NTNavigationController;
+			sourceTree = "<group>";
+		};
+		C0C20CF5194828BE003744B3 /* NTViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CF6194828BE003744B3 /* NTViewController.h */,
+				C0C20CF7194828BE003744B3 /* NTViewController.m */,
+			);
+			path = NTViewController;
+			sourceTree = "<group>";
+		};
+		C0C20CF8194828BE003744B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D5B1948433A003744B3 /* AppStyle */,
+				C0C20CF9194828BE003744B3 /* UIUtils */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C0C20CF9194828BE003744B3 /* UIUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20CFA194828BE003744B3 /* UIUtils.h */,
+				C0C20CFB194828BE003744B3 /* UIUtils.m */,
+			);
+			path = UIUtils;
+			sourceTree = "<group>";
+		};
+		C0C20D07194828BE003744B3 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D2A194829F7003744B3 /* NTBaseMacro.h */,
+				C0C20D2B19482A3F003744B3 /* NTWebAPIMacro.h */,
+				C0C20D2C19482A91003744B3 /* NTNetEaseNewsAPIMacro.h */,
+				C0C20D2D19482AEA003744B3 /* NTNotificationMacro.h */,
+				C0C20D2E19482B05003744B3 /* NTUtilsMacro.h */,
+				C0C20D2F19482B24003744B3 /* NTVendorMacro.h */,
+				C0C20D2919482995003744B3 /* NTAppMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		C0C20D0E194828BE003744B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D0F194828BE003744B3 /* BaseModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0C20D0F194828BE003744B3 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D10194828BE003744B3 /* WXXBaseModel.h */,
+				C0C20D11194828BE003744B3 /* WXXBaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		C0C20D3019482BD6003744B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3119482BD6003744B3 /* NTTableView */,
+				C0C20D3419482BD6003744B3 /* NTTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0C20D3119482BD6003744B3 /* NTTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3219482BD6003744B3 /* NTTableView.h */,
+				C0C20D3319482BD6003744B3 /* NTTableView.m */,
+			);
+			path = NTTableView;
+			sourceTree = "<group>";
+		};
+		C0C20D3419482BD6003744B3 /* NTTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3519482BD6003744B3 /* NTTableViewCell.h */,
+				C0C20D3619482BD6003744B3 /* NTTableViewCell.m */,
+			);
+			path = NTTableViewCell;
+			sourceTree = "<group>";
+		};
+		C0C20D3919482D4F003744B3 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3A19482D7C003744B3 /* Mian */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		C0C20D3A19482D7C003744B3 /* Mian */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D3B19482DC3003744B3 /* NTMainViewController.h */,
+				C0C20D3C19482DC3003744B3 /* NTMainViewController.m */,
+				C0C20D5A194840B2003744B3 /* 人员管理 */,
+				C0C20D59194840A3003744B3 /* 清单 */,
+				C0C20D5819484092003744B3 /* 摘要 */,
+				C0C20D5719484084003744B3 /* 设置 */,
+			);
+			path = Mian;
+			sourceTree = "<group>";
+		};
+		C0C20D4119482E80003744B3 /* NTTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D4219482EBD003744B3 /* NTTabBarController.h */,
+				C0C20D4319482EBD003744B3 /* NTTabBarController.m */,
+			);
+			path = NTTabbarController;
+			sourceTree = "<group>";
+		};
+		C0C20D53194833B6003744B3 /* NTTabelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D54194833C5003744B3 /* NTTableViewController.h */,
+				C0C20D55194833C5003744B3 /* NTTableViewController.m */,
+			);
+			path = NTTabelViewController;
+			sourceTree = "<group>";
+		};
+		C0C20D5719484084003744B3 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D50194832CC003744B3 /* NTSettingController.h */,
+				C0C20D51194832CC003744B3 /* NTSettingController.m */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
+		C0C20D5819484092003744B3 /* 摘要 */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D4A1948320D003744B3 /* NTExpenseSummaryController.h */,
+				C0C20D4B1948320D003744B3 /* NTExpenseSummaryController.m */,
+			);
+			name = "摘要";
+			sourceTree = "<group>";
+		};
+		C0C20D59194840A3003744B3 /* 清单 */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D471948318A003744B3 /* NTExpenseListController.h */,
+				C0C20D481948318A003744B3 /* NTExpenseListController.m */,
+			);
+			name = "清单";
+			sourceTree = "<group>";
+		};
+		C0C20D5A194840B2003744B3 /* 人员管理 */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D4D1948329E003744B3 /* NTPersonnelManagementController.h */,
+				C0C20D4E1948329E003744B3 /* NTPersonnelManagementController.m */,
+			);
+			name = "人员管理";
+			sourceTree = "<group>";
+		};
+		C0C20D5B1948433A003744B3 /* AppStyle */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D5C1948434F003744B3 /* NTAppStyle.h */,
+				C0C20D5D1948434F003744B3 /* NTAppStyle.m */,
+			);
+			path = AppStyle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C09BE0011947F0CE0005E65E /* FList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09BE0371947F0CE0005E65E /* Build configuration list for PBXNativeTarget "FList" */;
+			buildPhases = (
+				C09BDFFE1947F0CE0005E65E /* Sources */,
+				C09BDFFF1947F0CE0005E65E /* Frameworks */,
+				C09BE0001947F0CE0005E65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FList;
+			productName = FList;
+			productReference = C09BE0021947F0CE0005E65E /* FList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C09BE0251947F0CE0005E65E /* FListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09BE03A1947F0CE0005E65E /* Build configuration list for PBXNativeTarget "FListTests" */;
+			buildPhases = (
+				C09BE0221947F0CE0005E65E /* Sources */,
+				C09BE0231947F0CE0005E65E /* Frameworks */,
+				C09BE0241947F0CE0005E65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C09BE02C1947F0CE0005E65E /* PBXTargetDependency */,
+			);
+			name = FListTests;
+			productName = FListTests;
+			productReference = C09BE0261947F0CE0005E65E /* FListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C09BDFFA1947F0CE0005E65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Next;
+				TargetAttributes = {
+					C09BE0011947F0CE0005E65E = {
+						DevelopmentTeam = 5856T889NQ;
+					};
+					C09BE0251947F0CE0005E65E = {
+						TestTargetID = C09BE0011947F0CE0005E65E;
+					};
+				};
+			};
+			buildConfigurationList = C09BDFFD1947F0CE0005E65E /* Build configuration list for PBXProject "FList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = C09BDFF91947F0CE0005E65E;
+			productRefGroup = C09BE0031947F0CE0005E65E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C09BE0011947F0CE0005E65E /* FList */,
+				C09BE0251947F0CE0005E65E /* FListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C09BE0001947F0CE0005E65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09BE0211947F0CE0005E65E /* Images.xcassets in Resources */,
+				C09BE0101947F0CE0005E65E /* InfoPlist.strings in Resources */,
+				C09BE0191947F0CE0005E65E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09BE0241947F0CE0005E65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09BE0321947F0CE0005E65E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C09BDFFE1947F0CE0005E65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C20D5E1948434F003744B3 /* NTAppStyle.m in Sources */,
+				C0C20D52194832CC003744B3 /* NTSettingController.m in Sources */,
+				C0C20D14194828BE003744B3 /* UIViewExt.m in Sources */,
+				C0C20D3719482BD6003744B3 /* NTTableView.m in Sources */,
+				C0C20D3819482BD6003744B3 /* NTTableViewCell.m in Sources */,
+				C0C20D4C1948320D003744B3 /* NTExpenseSummaryController.m in Sources */,
+				C0C20D18194828BE003744B3 /* NTViewController.m in Sources */,
+				C0C20D491948318A003744B3 /* NTExpenseListController.m in Sources */,
+				C0C20D4419482EBD003744B3 /* NTTabBarController.m in Sources */,
+				C0C20D17194828BE003744B3 /* NTNavigationController.m in Sources */,
+				C09BE0161947F0CE0005E65E /* NTAppDelegate.m in Sources */,
+				C09BE0121947F0CE0005E65E /* main.m in Sources */,
+				C0C20D56194833C5003744B3 /* NTTableViewController.m in Sources */,
+				C0C20D12194828BE003744B3 /* UIDevice+Resolutions.m in Sources */,
+				C0C20D1D194828BE003744B3 /* WXXBaseModel.m in Sources */,
+				C0C20D13194828BE003744B3 /* UIView+Effects.m in Sources */,
+				C0C20D19194828BE003744B3 /* UIUtils.m in Sources */,
+				C0C20D3D19482DC3003744B3 /* NTMainViewController.m in Sources */,
+				C0C20D4F1948329E003744B3 /* NTPersonnelManagementController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09BE0221947F0CE0005E65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09BE0341947F0CE0005E65E /* FListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C09BE02C1947F0CE0005E65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09BE0011947F0CE0005E65E /* FList */;
+			targetProxy = C09BE02B1947F0CE0005E65E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C09BE00E1947F0CE0005E65E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C09BE00F1947F0CE0005E65E /* en */,
+				C0C20D3E19482E03003744B3 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C09BE0171947F0CE0005E65E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C09BE0181947F0CE0005E65E /* Base */,
+				C0C20D3F19482E03003744B3 /* zh-Hans */,
+				C0C20D4619482F5C003744B3 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C09BE0301947F0CE0005E65E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C09BE0311947F0CE0005E65E /* en */,
+				C0C20D4019482E03003744B3 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C09BE0351947F0CE0005E65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C09BE0361947F0CE0005E65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C09BE0381947F0CE0005E65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FList/FList-Prefix.pch";
+				INFOPLIST_FILE = "FList/FList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C09BE0391947F0CE0005E65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FList/FList-Prefix.pch";
+				INFOPLIST_FILE = "FList/FList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C09BE03B1947F0CE0005E65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FList.app/FList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FList/FList-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FListTests/FListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C09BE03C1947F0CE0005E65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FList.app/FList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FList/FList-Prefix.pch";
+				INFOPLIST_FILE = "FListTests/FListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C09BDFFD1947F0CE0005E65E /* Build configuration list for PBXProject "FList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09BE0351947F0CE0005E65E /* Debug */,
+				C09BE0361947F0CE0005E65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09BE0371947F0CE0005E65E /* Build configuration list for PBXNativeTarget "FList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09BE0381947F0CE0005E65E /* Debug */,
+				C09BE0391947F0CE0005E65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09BE03A1947F0CE0005E65E /* Build configuration list for PBXNativeTarget "FListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09BE03B1947F0CE0005E65E /* Debug */,
+				C09BE03C1947F0CE0005E65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C09BDFFA1947F0CE0005E65E /* Project object */;
+}
