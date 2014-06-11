@@ -37,6 +37,7 @@
 		C0C20D52194832CC003744B3 /* NTSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D51194832CC003744B3 /* NTSettingController.m */; };
 		C0C20D56194833C5003744B3 /* NTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D55194833C5003744B3 /* NTTableViewController.m */; };
 		C0C20D5E1948434F003744B3 /* NTAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D5D1948434F003744B3 /* NTAppStyle.m */; };
+		C0C20D6219484A74003744B3 /* GitAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C20D6119484A74003744B3 /* GitAvatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		C0C20D55194833C5003744B3 /* NTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTableViewController.m; sourceTree = "<group>"; };
 		C0C20D5C1948434F003744B3 /* NTAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAppStyle.h; sourceTree = "<group>"; };
 		C0C20D5D1948434F003744B3 /* NTAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAppStyle.m; sourceTree = "<group>"; };
+		C0C20D6119484A74003744B3 /* GitAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GitAvatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		C09BDFF91947F0CE0005E65E = {
 			isa = PBXGroup;
 			children = (
+				C0C20D5F194849E1003744B3 /* Resource */,
 				C0C20D3919482D4F003744B3 /* Sections */,
 				C0C20CE0194828BE003744B3 /* General */,
 				C0C20D07194828BE003744B3 /* Macro */,
@@ -458,6 +461,22 @@
 			path = AppStyle;
 			sourceTree = "<group>";
 		};
+		C0C20D5F194849E1003744B3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D60194849E1003744B3 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C0C20D60194849E1003744B3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20D6119484A74003744B3 /* GitAvatar.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,6 +561,7 @@
 				C09BE0211947F0CE0005E65E /* Images.xcassets in Resources */,
 				C09BE0101947F0CE0005E65E /* InfoPlist.strings in Resources */,
 				C09BE0191947F0CE0005E65E /* Main.storyboard in Resources */,
+				C0C20D6219484A74003744B3 /* GitAvatar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
