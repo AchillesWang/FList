@@ -12,7 +12,7 @@
 		C09BE00A1947F0CE0005E65E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0091947F0CE0005E65E /* UIKit.framework */; };
 		C09BE0101947F0CE0005E65E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C09BE00E1947F0CE0005E65E /* InfoPlist.strings */; };
 		C09BE0121947F0CE0005E65E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C09BE0111947F0CE0005E65E /* main.m */; };
-		C09BE0161947F0CE0005E65E /* NTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C09BE0151947F0CE0005E65E /* NTAppDelegate.m */; };
+		C09BE0161947F0CE0005E65E /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C09BE0151947F0CE0005E65E /* FLAppDelegate.m */; };
 		C09BE0191947F0CE0005E65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09BE0171947F0CE0005E65E /* Main.storyboard */; };
 		C09BE0211947F0CE0005E65E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09BE0201947F0CE0005E65E /* Images.xcassets */; };
 		C09BE0281947F0CE0005E65E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09BE0271947F0CE0005E65E /* XCTest.framework */; };
@@ -43,6 +43,7 @@
 		C0C20D6E19484EA2003744B3 /* NTImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D6D19484EA2003744B3 /* NTImageView.m */; };
 		C0C20D7119484EB8003744B3 /* NTRDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D7019484EB8003744B3 /* NTRDImageView.m */; };
 		C0C20D7419485221003744B3 /* NTPMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C20D7319485221003744B3 /* NTPMCell.m */; };
+		C0CD2F6B19580691005EACBD /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0CD2F6D19580691005EACBD /* Localization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +65,8 @@
 		C09BE00F1947F0CE0005E65E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C09BE0111947F0CE0005E65E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C09BE0131947F0CE0005E65E /* FList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FList-Prefix.pch"; sourceTree = "<group>"; };
-		C09BE0141947F0CE0005E65E /* NTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTAppDelegate.h; sourceTree = "<group>"; };
-		C09BE0151947F0CE0005E65E /* NTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTAppDelegate.m; sourceTree = "<group>"; };
+		C09BE0141947F0CE0005E65E /* FLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAppDelegate.h; sourceTree = "<group>"; };
+		C09BE0151947F0CE0005E65E /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
 		C09BE0181947F0CE0005E65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C09BE0201947F0CE0005E65E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C09BE0261947F0CE0005E65E /* FListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +130,8 @@
 		C0C20D7019484EB8003744B3 /* NTRDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTRDImageView.m; sourceTree = "<group>"; };
 		C0C20D7219485221003744B3 /* NTPMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTPMCell.h; sourceTree = "<group>"; };
 		C0C20D7319485221003744B3 /* NTPMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTPMCell.m; sourceTree = "<group>"; };
+		C0CD2F6C19580691005EACBD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localization.strings"; sourceTree = "<group>"; };
+		C0CD2F6E19580693005EACBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,8 +196,8 @@
 		C09BE00B1947F0CE0005E65E /* FList */ = {
 			isa = PBXGroup;
 			children = (
-				C09BE0141947F0CE0005E65E /* NTAppDelegate.h */,
-				C09BE0151947F0CE0005E65E /* NTAppDelegate.m */,
+				C09BE0141947F0CE0005E65E /* FLAppDelegate.h */,
+				C09BE0151947F0CE0005E65E /* FLAppDelegate.m */,
 				C09BE0171947F0CE0005E65E /* Main.storyboard */,
 				C09BE0201947F0CE0005E65E /* Images.xcassets */,
 				C09BE00C1947F0CE0005E65E /* Supporting Files */,
@@ -486,6 +489,7 @@
 		C0C20D5F194849E1003744B3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C0CD2F6819580655005EACBD /* Language */,
 				C0C20D60194849E1003744B3 /* Images */,
 			);
 			path = Resource;
@@ -524,6 +528,14 @@
 				C0C20D6A19484E73003744B3 /* NTView.m */,
 			);
 			path = NTView;
+			sourceTree = "<group>";
+		};
+		C0CD2F6819580655005EACBD /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				C0CD2F6D19580691005EACBD /* Localization.strings */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,7 +582,7 @@
 		C09BDFFA1947F0CE0005E65E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = NT;
+				CLASSPREFIX = FL;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Next;
 				TargetAttributes = {
@@ -609,6 +621,7 @@
 			files = (
 				C09BE0211947F0CE0005E65E /* Images.xcassets in Resources */,
 				C09BE0101947F0CE0005E65E /* InfoPlist.strings in Resources */,
+				C0CD2F6B19580691005EACBD /* Localization.strings in Resources */,
 				C09BE0191947F0CE0005E65E /* Main.storyboard in Resources */,
 				C0C20D6219484A74003744B3 /* GitAvatar.png in Resources */,
 			);
@@ -644,7 +657,7 @@
 				C0C20D4419482EBD003744B3 /* NTTabBarController.m in Sources */,
 				C0C20D7119484EB8003744B3 /* NTRDImageView.m in Sources */,
 				C0C20D17194828BE003744B3 /* NTNavigationController.m in Sources */,
-				C09BE0161947F0CE0005E65E /* NTAppDelegate.m in Sources */,
+				C09BE0161947F0CE0005E65E /* FLAppDelegate.m in Sources */,
 				C09BE0121947F0CE0005E65E /* main.m in Sources */,
 				C0C20D56194833C5003744B3 /* NTTableViewController.m in Sources */,
 				C0C20D12194828BE003744B3 /* UIDevice+Resolutions.m in Sources */,
@@ -701,6 +714,15 @@
 				C0C20D4019482E03003744B3 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0CD2F6D19580691005EACBD /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0CD2F6C19580691005EACBD /* zh-Hans */,
+				C0CD2F6E19580693005EACBD /* en */,
+			);
+			name = Localization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
